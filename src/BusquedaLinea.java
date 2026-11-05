@@ -28,7 +28,7 @@ public class BusquedaLinea {
     //RETORNE ______-1______ SI NO LO ENCUENTRA
     public int findPosByName(String name){
         for (int i = 0; i < personas.size(); i++){
-            if (persona.get(i).getName().equals(name)){
+            if (personas.get(i).getName().equals(name)){
                 return i;
             }
         }

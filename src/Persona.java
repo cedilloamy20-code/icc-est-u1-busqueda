@@ -9,7 +9,7 @@
  * ToString
  */
 
-public class Persona {
+public class Persona implements Comparable<Persona> {
     private String name;
     private String genero;
     private int edad;
@@ -39,6 +39,19 @@ public class Persona {
     public void setGenero(String genero) {
         this.genero = genero;
     }
+    
+    public int getEdad() {
+        return edad;
+    }
+
+    public void setEdad(int edad) {
+        this.edad = edad;
+    }
+
+    public int compareTo(Persona o) {
+        return this.name.compareTo(o.name);
+    }
+    
 
     @Override
     public String toString(){
